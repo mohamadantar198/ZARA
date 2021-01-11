@@ -1,58 +1,98 @@
 <html>
     <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Z A R A </title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/slick.css">
-		<link rel="stylesheet" href="css/slick-theme.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="fonts/css/all.min.css">
-    </head>
+    		<link rel="stylesheet" href="css/slick.css">
+    		<link rel="stylesheet" href="css/slick-theme.css">
+    		<link rel="stylesheet" href="css/style.css">
+    		<link rel="stylesheet" href="fonts/css/all.min.css">
+    </head> 
     <body>
 
-                                                  <!----------- nav ------------>
+               
+                   <!-- header -->
+            <div class=" d-flex justify-content-between bg-light">
+               <div class="mt-2">
+                    <a href="#" class="px-3  text-success h2"><i class="fas fa-language"></i></a>
+                    <a href="#" class="px-3  text-success h2 "><i class="fas fa-globe-africa"></i></a>
+                </div>
 
-        <section class="navbar  ">
-          <nav class="navbar navbar-expand-sm  bg-light fixed-top nav-fill  ">
-                <a class="navbar-brand" href="#">Z&#581;R&#581;</a>
+                <div class="input-group mt-5 w-50 ">
+                <div class="input-group-prepend">
+                  <button class="btn bg-dark text-light" type="button" >Search</button>
+                </div>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+         
+                <div class="mt-2">
+                    <a href="account.html" class="px-3  text-success h2 "><i class="fas fa-user-plus"></i></a>
+                    <a href="#" class="px-3  text-success h2 "><i class="far fa-heart"></i></a>
+                </div>
+            </div>
+                                               <!----------- nav ------------>
+              <nav class="navbar navbar-expand-lg  bg-light sticky-top  nav-fill  ">
+                <a class="navbar-brand" href="index.html">Z&#581;R&#581;</a>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="menu-icon"><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav w-75  ">
                       <li class="nav-item active "> 
-                           <a class="nav-link" href="#home ">Home <span class="sr-only">(current)</span></a>
+                           <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                           <a class="nav-link" href="#new">New</a>
+                           <a class="nav-link" href="index.html#new">NEW</a>
                       </li>
                       <li class="nav-item">
-                           <a class="nav-link" href="#offers">Offers</a>
+                           <a class="nav-link" href="#offers">OFFERS</a>
                       </li>
+                
                       <li class="nav-item">
-                           <a class="nav-link" href="#products">Products</a>
+                           <div class="dropdown">
+                              <a class=" nav-link dropdown-toggle" href="products.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PRODUCTS
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item " href="products.html">ALL</a>
+                                <a class="dropdown-item " href="products.html#men">Mem</a>
+                                <a class="dropdown-item" href="products.html#women">Women</a>
+                                <a class="dropdown-item" href="products.html#kids">Kids</a>
+                                <a class="dropdown-item" href="products.html#sports">Sports</a>
+                              </div>
+                            </div>
                     </li>
-                      <li class="nav-item">
-                           <a class="nav-link" href="#feedback">Feedback</a>
-                    </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="account.html">Account</a>
-                    </li>
+
+                         <li class="nav-item">
+                           <a class="nav-link" href="index.html#feedback">FEADBACK</a>
+                       </li>
+
 
                 </ul> 
                   <div class="navbottt ">
-                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-                   <button class="btn btn-outline-success " type="Cart"><i class="fas fa-cart-plus"></i></button>
+                       <form action="#" class="cart-nav">
+                        <a href="cart.html" class="py-2 rounded-pill">
+                        <span class="px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                      </a>
+                  </form>
+
                    </div>
               </div>
            </nav>
-      </section>
+
+
+
+         
 
                                   <!----------- header ---------->
 
-           <div class="allcontant" >
-              <section class="row" id="home">
-                  <div class="sec1"> 
-                        <h1> Give Your Life<br> A New Style!</h1>
+           <section class="container-lg justify-content-center">
+              <div class="row" id="home">
+                  <div class="sec1 mt-5"> 
+                        <h1 class="mt-5"> Give Your Life<br> A New Style!</h1>
                         <p>Here You Can Find All types You Want</p>
                         <a href="" class="btnnow">Explor Now &#x21e2;</a>
                     </div>
@@ -77,62 +117,163 @@
                           </div>
 
                     </div>
-              </section>
+                 </div>
+
+                 </section>
 
                                     <!---------- some products ------------>
 
-
-              <section class="someprodcts">
-                <div class="smallcontinarr">
-                   <h2 class="sec-name" id="new"> New Collection</h2>
-                <div class="row">
-                  <div class="sec2"> 
-                    <img src="images/men/11.png">
-                    <h4 class="prodc-name">Classic Shoes</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class=" fa fa-star"></i>
-                    </div>
-                    <p class="price"> $200.00</p>
-                  </div>
-                  <div class="sec2"> 
-                    <img src="images/men/23.png">
-                    <h4 class="prodc-name">Red T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class=" fa fa-star"></i>
-                    </div>
-                    <p class="price"> $399.00</p>
-                  </div>
-                  <div class="sec2"> 
-                    <img src="images/men/10.png">
-                    <h4 class="prodc-name">Red T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class=" fa fa-star"></i>
-                    </div>
-                    <p class="price"> $500.00</p>
-                  </div>
-                  </div>
+              <h2 class="sec-name m-5" id="new"> New Collection</h2>
+                <section class="container-md">
+  <div class="autoplay row">
+    <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/men/2.png"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
+    <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/women/2.png"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
+    <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/kids/11.jpg"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
+     <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/sports/10.jpg"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
+                 <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/men/16.png"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
+    <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/women/8.png"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
+    <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/kids/15.jpg"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
+     <div>
+      <div class="sec2 text-center"> 
+                       <a href="productpage.html"><img src="images/sports/22.jpg"></a>
+                       <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                          <div class="rating">
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                                <i class=" fa fa-star"></i>
+                           </div>
+                   
+                              <p class="price"> $200.00</p>
+                              <button type="submit" class="btn btn-success font-size-12  ">Add to Cart</button>
+                             <button type="submit" class="btn btn-info font-size-12 ">Buy Now</button>
+                   </div>
+                 </div>
                 </div>
-              </section> 
+            </section>
                                 <!-----   featured products --->
-
-              <section class="smallcontinarr">
-                <h2 class="sec-name" id="offers"> Big sales </h2>
-                <div class="row">
-                  <div class="sec3"> 
-                    <img src="images/product-1.jpg">
-                    <h4 class="prodc-name">Red T-shirt</h4>
+        <h2 class="sec-name m-5" id="offers"> Big sales </h2>
+        
+              <section class="container-md">
+                
+                
+                <div class="row other">
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/23.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -141,10 +282,12 @@
                        <i class=" fa fa-star"></i>
                     </div>
                     <p class="price"> $100.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                  <div class="sec3"> 
-                    <img src="images/product-10.jpg">
-                    <h4 class="prodc-name">Classic Shoes</h4>
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/18.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Sweatpants</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -153,11 +296,13 @@
                         <i class="far fa-star"></i>
                        
                     </div>
-                    <p class="price"> $87.00</p>
+                    <p class="price "> $87.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                  <div class="sec3"> 
-                    <img src="images/product-9.jpg">
-                    <h4 class="prodc-name"> Sweatpants</h4>
+                  <div class="sec3 text-center"> 
+                   <a href="productpage.html"><img src="images/men/17.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">T-Shirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -166,10 +311,12 @@
                        <i class="far fa-star"></i>
                     </div>
                     <p class="price"> $99.50</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                  <div class="sec3"> 
-                    <img src="images/men/16.png">
-                    <h4 class="prodc-name">Blue T-shirt</h4>
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/14.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -178,117 +325,47 @@
                        <i class="fas fa-star-half-alt"></i>
                     </div>
                     <p class="price"> $70.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
+                  </div>
+                                    <div class="sec3 text-center"> 
+                   <a href="productpage.html"><img src="images/men/17.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">T-Shirt</h4></a>
+                    <div class="rating">
+                        <i class=" fa fa-star"></i>
+                        <i class=" fa fa-star"></i>
+                        <i class=" fa fa-star"></i>
+                        <i class=" fa fa-star"></i>
+                       <i class="far fa-star"></i>
+                    </div>
+                    <p class="price"> $99.50</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
+                  </div>
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/14.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
+                    <div class="rating">
+                        <i class=" fa fa-star"></i>
+                        <i class=" fa fa-star"></i>
+                        <i class=" fa fa-star"></i>
+                        <i class=" fa fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="price"> $70.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="sec3"> 
-                    <img src="images/woman/9.png">
-                    <h4 class="prodc-name">Red T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class=" fa fa-star"></i>
-                    </div>
-                    <p class="price"> $100.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/woman/6.png">
-                    <h4 class="prodc-name">Classic Shoes</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                       
-                    </div>
-                    <p class="price"> $87.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/product-8.jpg">
-                    <h4 class="prodc-name"> Sweatpants</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class="far fa-star"></i>
-                    </div>
-                    <p class="price"> $99.50</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/men/6.png">
-                    <h4 class="prodc-name">Blue T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="price"> $70.00</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="sec3"> 
-                    <img src="images/woman/10.png">
-                    <h4 class="prodc-name">Red T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class=" fa fa-star"></i>
-                    </div>
-                    <p class="price"> $100.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/product-11.jpg">
-                    <h4 class="prodc-name">Classic Shoes</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                       
-                    </div>
-                    <p class="price"> $87.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/men/8.png">
-                    <h4 class="prodc-name"> Sweatpants</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class="far fa-star"></i>
-                    </div>
-                    <p class="price"> $99.50</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/men/4.png">
-                    <h4 class="prodc-name">Blue T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="price"> $70.00</p>
-                  </div>
+              </section>
 
                               <!------   last products ---->
-
-                   <h2 class="sec-name" id="products"> Last Products </h2>
-                <div class="row">
-                  <div class="sec3"> 
-                    <img src="images/men/1.png">
-                    <h4 class="prodc-name">Red T-shirt</h4>
+                   <h2 class="sec-name m-5" id="products"> Last Products </h2>
+          <section class="container-md">
+                <div class="row other">
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/23.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -297,10 +374,12 @@
                        <i class=" fa fa-star"></i>
                     </div>
                     <p class="price"> $100.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                  <div class="sec3"> 
-                    <img src="images/woman/6.png">
-                    <h4 class="prodc-name">Classic Shoes</h4>
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/18.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Sweatpants</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -309,11 +388,13 @@
                         <i class="far fa-star"></i>
                        
                     </div>
-                    <p class="price"> $87.00</p>
+                    <p class="price "> $87.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                  <div class="sec3"> 
-                    <img src="images/men/3.png">
-                    <h4 class="prodc-name"> Sweatpants</h4>
+                  <div class="sec3 text-center"> 
+                   <a href="productpage.html"><img src="images/men/17.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">T-Shirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -322,10 +403,12 @@
                        <i class="far fa-star"></i>
                     </div>
                     <p class="price"> $99.50</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                  <div class="sec3"> 
-                    <img src="images/woman/5.png">
-                    <h4 class="prodc-name">Blue T-shirt</h4>
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/14.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -334,37 +417,12 @@
                        <i class="fas fa-star-half-alt"></i>
                     </div>
                     <p class="price"> $70.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="sec3"> 
-                    <img src="images/woman/1.png">
-                    <h4 class="prodc-name">Red T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class=" fa fa-star"></i>
-                    </div>
-                    <p class="price"> $100.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/men/6.png">
-                    <h4 class="prodc-name">Classic Shoes</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                       
-                    </div>
-                    <p class="price"> $87.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/woman/2.png">
-                    <h4 class="prodc-name"> Sweatpants</h4>
+                                    <div class="sec3 text-center"> 
+                   <a href="productpage.html"><img src="images/men/17.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">T-Shirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -373,10 +431,12 @@
                        <i class="far fa-star"></i>
                     </div>
                     <p class="price"> $99.50</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
-                  <div class="sec3"> 
-                    <img src="images/men/8.png">
-                    <h4 class="prodc-name">Blue T-shirt</h4>
+                  <div class="sec3 text-center"> 
+                    <a href="productpage.html"><img src="images/men/14.png"></a>
+                   <a href="productpage.html"> <h4 class="prodc-name">Black sweatshirt</h4></a>
                     <div class="rating">
                         <i class=" fa fa-star"></i>
                         <i class=" fa fa-star"></i>
@@ -385,65 +445,16 @@
                        <i class="fas fa-star-half-alt"></i>
                     </div>
                     <p class="price"> $70.00</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="sec3"> 
-                    <img src="images/woman/3.png">
-                    <h4 class="prodc-name">Red T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class=" fa fa-star"></i>
-                    </div>
-                    <p class="price"> $100.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/men/10.png">
-                    <h4 class="prodc-name">Classic Shoes</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                       
-                    </div>
-                    <p class="price"> $87.00</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/woman/4.png">
-                    <h4 class="prodc-name"> Sweatpants</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class="far fa-star"></i>
-                    </div>
-                    <p class="price"> $99.50</p>
-                  </div>
-                  <div class="sec3"> 
-                    <img src="images/men/12.png">
-                    <h4 class="prodc-name">Blue T-shirt</h4>
-                    <div class="rating">
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                        <i class=" fa fa-star"></i>
-                       <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="price"> $70.00</p>
+                      <button type="submit" class="btn btn-success font-size-12">Add to Cart</button>
+                       <button type="submit" class="btn btn-info font-size-12">Buy Now</button>
                   </div>
                 </div>
               </section>
                         <!------------ comments ------------>
 
             <section class="comments" id="feedback">
-              <h2 class="sec-name" > Some comments </h2>
-              <div class="smallcontinarr">
+              <h2 class="sec-name m-5" > Some comments </h2>
+              <div class="container-md">
                 <div class="row">
                   <div class="sec2">
                     <i class="fa fa-quote-left"></i>
@@ -492,10 +503,10 @@
     </div>
                                              <!--------- footer ------->
            <footer class="footer">
-            <div class="allcontant">
-              <div class="row">
+            <div class="container-fluid">
+              <div class="row-foter">
                 <div class="footer-sec1">
-                  <h3>Dowbload our app </h3>
+                  <h3>Download our app </h3>
                   <p>Download now for android and IOS </p>
                   <div class="app-logo">
                     <img src="images/play-store.png">
@@ -523,7 +534,7 @@
               </div>
             </footer>
         
-        
+  
         
         
           <script src="js/jquery-3.5.1.min.js" ></script>

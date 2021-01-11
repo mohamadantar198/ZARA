@@ -11,45 +11,76 @@
 
                                                   <!----------- nav ------------>
 
-        <section class="navbar ">
-          <nav class="navbar navbar-expand-sm  bg-light fixed-top nav-fill  ">
-                <a class="navbar-brand" href="#">Z&#581;R&#581;</a>
+                    <div class=" d-flex justify-content-between bg-light">
+               <div class="mt-2">
+                    <a href="#" class="px-3  text-success h2"><i class="fas fa-language"></i></a>
+                    <a href="#" class="px-3  text-success h2 "><i class="fas fa-globe-africa"></i></a>
+                </div>
+          <div class="input-group mt-5 w-50 ">
+                <div class="input-group-prepend">
+                  <button class="btn bg-dark text-light" type="button" >Search</button>
+                </div>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+         
+                <div class="mt-2">
+                    <a href="account.html" class="px-3  text-success h2 "><i class="fas fa-user-plus"></i></a>
+                    <a href="#" class="px-3  text-success h2 "><i class="far fa-heart"></i></a>
+                </div>
+            </div>
+                                               <!----------- nav ------------>
+              <nav class="navbar navbar-expand-lg  bg-light sticky-top  nav-fill  ">
+                <a class="navbar-brand" href="index.html">Z&#581;R&#581;</a>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="menu-icon"><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav w-75  ">
                       <li class="nav-item active "> 
-                           <a class="nav-link" href="index.html ">Home <span class="sr-only">(current)</span></a>
+                           <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                           <a class="nav-link" href="#new">New</a>
+                           <a class="nav-link" href="index.html#new">NEW</a>
                       </li>
                       <li class="nav-item">
-                           <a class="nav-link" href="#offers">Offers</a>
+                           <a class="nav-link" href="#offers">OFFERS</a>
                       </li>
-                      <li class="nav-item">
-                           <a class="nav-link" href="#products">Products</a>
-                    </li>
-                      <li class="nav-item">
-                           <a class="nav-link" href="#feedback">Feedback</a>
+                                          <li class="nav-item">
+                           <div class="dropdown">
+                              <a class=" nav-link dropdown-toggle" href="products.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PRODUCTS
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item " href="products.html">ALL</a>
+                                <a class="dropdown-item " href="products.html#men">Mem</a>
+                                <a class="dropdown-item" href="products.html#women">Women</a>
+                                <a class="dropdown-item" href="products.html#kids">Kids</a>
+                                <a class="dropdown-item" href="products.html#sports">Sports</a>
+                              </div>
+                            </div>
                     </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="account.html">Account</a>
+                           <a class="nav-link" href="index.html#feedback">FEADBACK</a>
                     </li>
 
                 </ul> 
-                <div class="navbottt ">
-                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-                   <button class="btn btn-outline-success " type="Cart"><i class="fas fa-cart-plus"></i></button>
+                  <div class="navbottt ">
+                       <form action="#" class="cart-nav">
+                        <a href="cart.html" class="py-2 rounded-pill">
+                        <span class="px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                      </a>
+                  </form>
+
                    </div>
               </div>
            </nav>
-      </section>
+
 
                                   <!----------- header ---------->
 
-           <div class="allcontant" >
+           <div class="container-lg" >
               <section class="row" id="home">
                   <div class="sec1"> 
                         <h1> Give Your Life<br> A New Style!</h1>
@@ -94,8 +125,8 @@
     </div>
                                              <!--------- footer ------->
            <footer class="footer">
-            <div class="allcontant">
-              <div class="row">
+            <div class="container-fluid">
+              <div class="row-foter">
                 <div class="footer-sec1">
                   <h3>Dowbload our app </h3>
                   <p>Download now for android and IOS </p>

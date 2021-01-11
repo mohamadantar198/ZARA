@@ -40,6 +40,34 @@ $(".to-slick").slick({
   ]
 });
 
+// slikkkkk2
+
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  arrows:true
+});
+
+$('.other').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows:true
+});
+
+
+
+
+
+
+
+// log inn
+
+
 var LoginForm = document.getElementById("LoginForm");
 var RegForm = document.getElementById("RegForm");
 var Indicator = document.getElementById("Indicator");
@@ -55,5 +83,76 @@ var Indicator = document.getElementById("Indicator");
         Indicator.style.transform ="translateX(0px)";
      }
 
+          // product imggg
+  /*
+
+  var ProductImg = document.getElementById("ProductImg");
+  var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+               ProductImg.src =SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+               ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+              ProductImg.src = SmallImg[2].src;
+        }
+       SmallImg[3].onclick = function()
+        {
+               ProductImg.src = SmallImg[3].src;
+        }
+
+*/
+
+// filtar items 
+
+$(document).ready(function(){
+  $('.list').click(function(){
+    var value = $(this).attr('data-filter');
+	console.log(value);
+    if (value == "All"){
+	  $('.itemBox').hide('500');
+      $('.itemBox').show('1000');
+    }
+    else{
+     $(".itemBox:not('."+value+"')").hide('1000');
+     $("."+value).show('1000');
+    }
+  })
+  $('.list').click(function(){
+    $(this).addClass('btn-success').siblings().removeClass('btn-success');
+  })
+})
+
+// quntity upps and dowons 
+$(document).ready(function(){
+let $qty_up = $(".qty .qty-up");
+    let $qty_down = $(".qty .qty-down");
+    // let $input = $(".qty .qty_input");
+
+    // click on qty up button
+    $qty_up.click(function(e){
+        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
+        if($input.val() >= 1 && $input.val() <= 9){
+            $input.val(function(i, oldval){
+                return ++oldval;
+            });
+        }
+    });
+
+       // click on qty down button
+       $qty_down.click(function(e){
+        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
+        if($input.val() > 1 && $input.val() <= 10){
+            $input.val(function(i, oldval){
+                return --oldval;
+            });
+        }
+    });
 
 
+});
