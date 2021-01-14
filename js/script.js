@@ -156,3 +156,14 @@ let $qty_up = $(".qty .qty-up");
 
 
 });
+
+
+(function($) {
+
+  
+
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+  });
+
+})(jQuery);
